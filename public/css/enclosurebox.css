@@ -1,0 +1,251 @@
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.enclosure-card {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    min-height: 260px;
+    background-image: url('/images/background.png'); /* your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #81c784;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enclosure-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
+}
+
+.card-info {
+    z-index: 1;
+    color: #2e7d32;
+}
+
+.card-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: #1b5e20;
+}
+
+.card-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #388e3c;
+}
+
+.card-info p {
+    margin: 0.25rem 0;
+    color: #4e7d4c;
+    font-size: 0.95rem;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 139, 34, 0.85); /* forest green */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    padding: 1rem;
+    text-align: center;
+}
+
+.enclosure-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-btn {
+    background-color: #ffffff;
+    color: #2e7d32;
+    font-weight: bold;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-btn:hover {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+}
+
+.card-btn.danger-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.card-btn.danger-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+.pagination-button {
+    background-color: #66bb6a;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.pagination-button:hover {
+    background-color: #388e3c;
+}
+
+.disabled-button {
+    color: #aaa;
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+/* Header styling */
+.page-header {
+    max-width: 800px;
+    margin: 3rem auto 2rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.page-header h1 {
+    font-size: 2.4rem;
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Create button styling */
+.create-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #43a047;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.create-btn:hover {
+    background-color: #2e7d32;
+}
+
+/* Pagination spacing */
+.pagination-buttons {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.delete-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 50, 0, 0.5);
+    z-index: 0;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #f7fcf7;
+    border: 2px solid #81c784;
+    border-radius: 14px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    z-index: 1;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-content h3 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    color: #4e7d4c;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.modal-buttons .btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn.btn-secondary {
+    background-color: #e0f2f1;
+    color: #2e7d32;
+    border: none;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #c8e6c9;
+}
+
+.btn.danger-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.btn.danger-btn:hover {
+    background-color: #d32f2f;
+}
+
+.hidden {
+    display: none;
+}
+

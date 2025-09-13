@@ -1,0 +1,76 @@
+.animal-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.animal-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.animal-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.animal-details h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.animal-details p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.animal-details a {
+    color: #3490dc;
+    text-decoration: none;
+}
+
+.animal-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #F44336;
+    color: white;
+    border: none;
+}
+
+.back-btn {
+    background-color: #2196F3;
+    color: white;
+}
+.delete-form {
+    display: inline;
+}

@@ -1,0 +1,62 @@
+/* Feed Tasks Page — Zoo Management Style */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fdf8;
+    margin: 0;
+    padding: 0;
+}
+
+.task-page {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.task-page h1 {
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.task-card {
+    background-color: #e6f4ea;
+    border-left: 6px solid #43a047;
+    margin-bottom: 1.2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    position: relative;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.task-card:hover {
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    transform: scale(1.01);
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2d572c;
+}
+
+.task-time {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.task-note {
+    font-size: 0.95rem;
+    margin-top: 0.4rem;
+    color: #666;
+}
